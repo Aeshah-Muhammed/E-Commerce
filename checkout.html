@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A-shop</title>
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="logo">
+          <h1>A-Shop<span>.</span></h1>
+        </div>
+        <div id="drop-down" class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="about.html">About Us</a></li>
+            <li class="hover-product"><a href="product.html">Product</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div id="bar-solid" onclick="navckick()" class="barsolid-icon">
+          <img src="/Assets/Icon/bars-solid.svg" alt="" />
+        </div>
+      </div>
+      <div onclick="closenavckick()" id="index-icon" class="index-icon">
+        <strong>X</strong>
+      </div>
+
+      <div id="side-solid" class="side-solid">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- header ends  -->
+
+    <!-- check out  -->
+    <div class="check-outWrap">
+      <h3>Billing Details</h3>
+      <div class="checkout">
+        <div class="left">
+          <div class="names">
+            <div class="name">
+              <label for="text">First Name</label><br /><br />
+              <input type="text" />
+            </div>
+            <div class="name">
+              <label for="text">Last Name</label><br /><br />
+              <input type="text" /><br /><br />
+            </div>
+          </div>
+          <label for="text">Country</label><br /><br />
+          <select name="" id="">
+            <option value="">Select a country</option>
+            <option value="">Algeria</option>
+            <option value="">Bangladesh</option>
+            <option value="">Canada</option>
+            <option value="">Ghana</option>
+            <option value="">Korea</option>
+            <option value="">India</option>
+            <option value="">Nigeria</option></select
+          ><br /><br />
+          <label for="text">Street Address</label><br /><br />
+          <input
+            type="text"
+            placeholder="House number and strret name"
+          /><br /><br />
+          <input type="text" placeholder="Apartment, suite, unit etc" /><br />
+          <br />
+          <label for="text">Town / city</label><br /><br />
+          <input type="text" /><br /><br />
+
+          <div class="names">
+            <div class="name">
+              <label for="text">State / Country</label><br /><br />
+              <input type="text" />
+            </div>
+            <div class="name">
+              <label for="text">Postcode / Zip</label><br /><br />
+              <input type="text" /><br /><br />
+            </div>
+          </div>
+          <div class="names">
+            <div class="name">
+              <label for="number">Phone</label><br /><br />
+              <input type="text" />
+            </div>
+            <div class="name">
+              <label for="text">Email Address</label><br /><br />
+              <input type="text" /><br /><br />
+            </div>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" />
+            <span>Create an account ?</span>
+          </div>
+          <br /><br />
+          <div class="create-account">
+            <input type="email" placeholder="Email address" required/><br /><br />
+            <input type="password" placeholder="Password" /><br /><br />
+            <button class="btn">Register</button>
+          </div>
+        </div>
+        <div class="right">
+          <div class="inside-right">
+            <h3>Your order</h3>
+            <div class="right-box">
+              <div class="right-box1">
+                <ul>
+                  <li>Product</li>
+                  <li>Total</li>
+                </ul>
+              </div>
+              <div class="right-box2">
+                <ul>
+                  <li>
+                    <span class="order1">Product name X 1</span>
+                    <span class="order-price">$500</span>
+                  </li>
+                  <li>
+                    <span class="order1">Product name X 1</span>
+                    <span class="order-price">$500</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="right-box3">
+                <ul>
+                  <li class="shipping-order">Shipping</li>
+                  <li>Free shipping</li>
+                </ul>
+              </div>
+              <div class="right-box4">
+                <ul>
+                  <li class="order-total">Total</li>
+                  <li>$500</li>
+                </ul>
+              </div>
+              <div class="bank">
+                <h4><a href="">Direct bank transfer</a></h4>
+                <p>
+                  Please send a check to Store Name, Store Street, Store Town,
+                  Store State / County, Store Postcode.
+                </p>
+                <h4><a href="">Check payments</a></h4>
+                <h4><a href="">Cash on delivery</a></h4>
+              </div>
+            </div>
+            <div class="place-order">
+              <a href="">Place Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer  -->
+
+    <footer>
+      <h2>A-Shop</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eos
+        aut inventore quas nam voluptates sit quisquam, nesciunt tempore ex.
+      </p>
+      <div class="social-media">
+        <ul>
+          <li>
+            <a href=""><img src="Assets/Icon/facebook-brands.svg" alt="" /></a>
+          </li>
+          <div class="line"></div>
+          <li>
+            <a href=""><img src="Assets/Icon/instagram-brands.svg" alt="" /></a>
+          </li>
+          <div class="line"></div>
+          <li>
+            <a href=""><img src="Assets/Icon/twitter-brands.svg" alt="" /></a>
+          </li>
+          <div class="line"></div>
+          <li>
+            <a href=""><img src="Assets/Icon/linkedin-brands.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="copy-right">
+        &copy;
+        <p>2021 Muhammed Aisha.All Right Reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

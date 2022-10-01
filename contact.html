@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-shop</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+        <div class="logo">
+          <h1>A-Shop<span>.</span></h1>
+        </div>
+        <div class="navbar">
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a>  </li>
+        <li class="hover-product"><a href="product.html">Product</a></li>
+        <li class="active"><a href="contact.html">Contact</a></li>
+  
+</ul>
+        </div>
+
+        <div  id="bar-solid" onclick="navckick()"  class="barsolid-icon">
+            <img src="/Assets/Icon/bars-solid.svg" alt="">
+        </div>
+                </div>
+                <div onclick = "closenavckick()" id="index-icon" 
+                class="index-icon">
+                    <strong>X</strong> 
+                 </div>
+        
+                <div   id="side-solid" class="side-solid">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a>  </li>
+                            <li><a href="product.html">Product</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                      
+                    </ul>
+                </div>
+    </header>
+    
+       <!-- header ends  -->
+
+
+       <!-- contact  -->
+
+
+       <div class="contact">
+<div class="contact-social">
+    <div class="each-contact">
+        <div class="contact-icon">
+            <img src="Assets/Icon/mobile-signal-out-solid.svg" alt="phone-number">
+        </div>
+
+            <ul>
+                <li>+234 706 6064 5926</li>
+                <li>+234 818 7295 619</li>
+            </ul>
+    </div>
+    <div class="each-contact">
+        <div class="contact-icon">
+            <img src="Assets/Icon/envelope-regular.svg" alt="mail">
+        </div>
+
+            <ul>
+                <li>aishatayinke9@gmail.com</li>
+                <li>aishatayinke9@gmail.com</li>
+            </ul>
+    </div>   
+     <div class="each-contact">
+        <div class="contact-icon">
+            <img src="Assets/Icon/location-dot-solid.svg" alt="location">
+        </div>
+
+            <ul>
+                <li>Gaa-Akanbi Ilorin,</li>
+                <li>Kwara-State Nigeria</li>
+            </ul>
+    </div>
+</div>
+        <div class="contact-form">
+            <h2>
+                Get In Touch
+            </h2>
+
+                <div class="names">
+                   
+                    <input class="text" type="text" placeholder="Name*"><br><br>
+                  
+                    <input class="mail" type="email" placeholder="Email*"><br><br> 
+                     </div>
+                  
+                    <input class="subject" type="text" name="subject" placeholder="Subject*"><br><br>
+     <textarea  class="message" name="message" id="" cols="30" rows="10" placeholder="Your Message*"></textarea><br><br>
+<!--alert  -->
+<div class="alert-success ">
+ <div class="hide-green">
+     <p>Your Message Has Been Sent</p>
+     <span><img src="Assets/Icon/check-solid.svg" alt=""></span>
+ </div>
+   </div>
+   <div class="alert-danger">
+  <div class="hide-red">
+     <p>Message Cannot Be Empty</p>
+  <span><img src="Assets/Icon/xmark-solid.svg" alt=""></span>
+  </div>
+   </div>
+<div class="hide-names">
+<div class="alert-input-name">
+<p>Fill in Your Name</p>
+<span><img src="Assets/Icon/xmark-solid.svg" alt=""></span>
+</div>
+</div>
+<div class="hide-mails">
+<div class="alert-input-mail"><p>Add Your Emali</p>
+<span><img src="/Assets/Icon/xmark-solid.svg" alt=""></span>
+</div>
+</div>
+<div class="hide-subjects">
+ <div class="alert-input-subject">
+ <p> Add Subject</p>
+ <span><img src="/Assets/Icon/xmark-solid.svg" alt=""></span>
+ </div>
+ </div>
+<div class="hide-messages">
+<div class="alert-input-message">
+<p> Message cannot Be Blank</p>
+<span><img src="/Assets/Icon/xmark-solid.svg" alt=""></span>
+</div>
+</div>
+
+     <button onclick=submitBtnfunction()  class="submit" type="submit">Send</button>
+                 </form>
+             </div>
+            </div>
+     <!--  -->
+    
+       <!-- contact ends  -->
+
+
+        <!-- footer  -->
+
+ <footer>
+    <h2>A-Shop</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eos aut inventore quas nam voluptates sit quisquam, nesciunt tempore ex.</p>
+    <div class="social-media">
+        <ul>
+  
+            <li><a href=""><img src="Assets/Icon/facebook-brands.svg" alt=""></a></li> 
+            <div class="line"></div>          
+             <li><a href=""><img src="Assets/Icon/instagram-brands.svg" alt=""></a></li>
+              <div class="line"></div>            <li><a href=""><img src="Assets/Icon/twitter-brands.svg" alt=""></a></li>   
+              <div class="line"></div>          <li><a href=""><img src="Assets/Icon/linkedin-brands.svg" alt=""></a></li>            <li><a href=""><img src="" alt=""></a></li>
+        </ul>
+    </div>
+    <div class="copy-right">
+        &copy;<p>2021 Muhammed Aisha.All Right Reserved. </p>
+    </div>
+   </footer>
+  <script src="script.js"></script>
+</body>
+</html>
