@@ -1,10 +1,13 @@
+/* IMPORTING FONT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 header {
   background-color: rgb(232, 232, 235);
@@ -176,21 +179,29 @@ textarea {
   cursor: pointer;
   background-color: #000;
 }
-span>img {
+span > img {
   height: 18px;
 }
-.alert-input-name, .alert-input-mail, .alert-input-subject, .alert-input-message, .hide-green, .hide-red {
+.alert-input-name,
+.alert-input-mail,
+.alert-input-subject,
+.alert-input-message,
+.hide-green,
+.hide-red {
   display: flex;
   justify-content: space-between;
   padding: 5px;
-  background-color:#fff;
-margin: 20px;
-font-size: 12px;
+  background-color: #fff;
+  margin: 20px;
+  font-size: 12px;
 }
-.alert-success,.alert-danger, .hide-names,
-.hide-mails, .hide-subjects, .hide-messages {
-display: none;
-  
+.alert-success,
+.alert-danger,
+.hide-names,
+.hide-mails,
+.hide-subjects,
+.hide-messages {
+  display: none;
 }
 
 /* contact ends  */
@@ -479,8 +490,7 @@ footer > p {
 @media (max-width: 528px) {
   .barsolid-icon {
     left: 450px;
-top: 60px;
-
+    top: 60px;
   }
 }
 
@@ -497,8 +507,8 @@ top: 60px;
 }
 @media (max-width: 374px) {
   .barsolid-icon {
- left: 300px;
-top: 60px;
+    left: 300px;
+    top: 60px;
   }
 }
 @media (max-width: 369px) {
