@@ -1,10 +1,13 @@
+/* IMPORTING FONT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .side-solid {
   display: none;
@@ -178,20 +181,34 @@ header {
   font-size: 16px;
   color: #000000;
 }
+
+.product-image {
+  height: 310px;
+}
+
+.product-image:hover {
+  filter: drop-shadow(0 1px 0.3rem rgba(0, 0, 0, 0.396));
+}
 .product-image > a {
   height: 250px;
 }
 
 .product-image > a > img {
   padding-bottom: 10px;
+  object-position: center;
   height: 100%;
   width: 100%;
 }
 
 .each-product > span {
-  display: flex;
+  padding-left: 5px;
+  font-style: italic;
 }
 
+.each-product > p {
+  font-weight: 500;
+  padding-left: 5px;
+}
 /* products ends  */
 
 /* about  */
@@ -202,7 +219,6 @@ header {
 .about-usTalks {
   font-weight: 500;
   letter-spacing: 0.3;
-  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -222,15 +238,14 @@ header {
 .all-images {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 23px;
   margin: 20px;
 }
 .about-usImage {
   height: 400px;
   width: 350px;
-  margin: 20px;
 }
 .about-usImage > img {
+  object-fit: contain;
   height: 100%;
   width: 100%;
 }
@@ -254,6 +269,12 @@ header {
   display: flex;
   justify-content: space-around;
   margin: 100px 0 80px 0;
+}
+
+.about-talks > div {
+  border: 1px solid #000;
+  padding: 60px 40px;
+  border-radius: 10px;
 }
 .vission > h3,
 .mission > h3,
@@ -289,6 +310,9 @@ header {
   width: 40%;
 }
 
+.contact-form .subject {
+  width: 98.4%;
+}
 .each-contact {
   display: flex;
   gap: 20px;
@@ -318,9 +342,10 @@ header {
   line-height: 1;
   margin-bottom: 36px;
 }
-.names {
+.contact-form .names {
   display: flex;
   gap: 10px;
+  width: 100%;
 }
 input {
   background: transparent;
@@ -331,6 +356,11 @@ input {
   font-size: 14px;
   width: 100%;
 }
+.contact-form h2 {
+  text-align: center;
+  font-size: 35px;
+  color: #000;
+}
 .contact-form > textarea {
   padding: 20px 14px;
   margin-bottom: 0px;
@@ -339,6 +369,7 @@ input {
   border: 1px solid #c1c1c1;
   font-size: 14px;
   resize: vertical;
+  width: 98.4%;
 }
 .contact-form > .submit {
   border: none;
@@ -353,21 +384,29 @@ input {
   cursor: pointer;
   background-color: #000;
 }
-span>img {
+span > img {
   height: 18px;
 }
-.alert-input-name, .alert-input-mail, .alert-input-subject, .alert-input-message, .hide-green, .hide-red {
+.alert-input-name,
+.alert-input-mail,
+.alert-input-subject,
+.alert-input-message,
+.hide-green,
+.hide-red {
   display: flex;
   justify-content: space-between;
   padding: 5px;
-  background-color:#fff;
-margin: 20px;
-font-size: 12px;
+  background-color: #fff;
+  margin: 20px;
+  font-size: 12px;
 }
-.alert-success,.alert-danger, .hide-names,
-.hide-mails, .hide-subjects, .hide-messages {
-display: none;
-  
+.alert-success,
+.alert-danger,
+.hide-names,
+.hide-mails,
+.hide-subjects,
+.hide-messages {
+  display: none;
 }
 
 /* contact ends  */
@@ -397,6 +436,11 @@ footer > p {
   word-wrap: break-word;
   max-width: 500px;
 }
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .social-media > ul {
   display: flex;
 }
@@ -404,8 +448,13 @@ footer > p {
   list-style: none;
 }
 .social-media > ul > li > a > img {
-  height: 20px;
+  height: 30px;
   margin: 10px;
+  transition: 0.1s ease;
+}
+.social-media > ul > li > a > img:hover {
+  transform: scale(1.09);
+  filter: drop-shadow(0 0 0.75rem #fff);
 }
 .line {
   background-color: #000;
@@ -927,6 +976,3 @@ footer > p {
     left: 250px;
   }
 }
-
-
-
