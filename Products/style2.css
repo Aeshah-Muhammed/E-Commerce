@@ -102,6 +102,7 @@ header {
   width: 280px;
 }
 .image-product > img {
+  object-fit: cover;
   height: 100%;
   width: 100%;
 }
